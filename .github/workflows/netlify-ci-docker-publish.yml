@@ -12,9 +12,10 @@ permissions:
 jobs:
   build-push-and-update-site:
     runs-on: ubuntu-latest
+
     env:
-      # He cambiado 'mi-web-app' por 'mi-web-netlify' para que coincida con tu repo
-      IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/mi-web-netlify
+      # CORREGIDO: Todo en minúsculas
+      IMAGE_NAME: ghcr.io/code-moises/mi-web-netlify
     
     steps:
       - name: Checkout repository
